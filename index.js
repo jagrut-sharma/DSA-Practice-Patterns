@@ -1,6 +1,40 @@
 const readlineSync = require('readline-sync');
 const n = readlineSync.question('Enter value of n\n');
 
+let str = '';
+for (let i = 5; i >= 1; i--) {
+  for (let j = 1; j <= i; j++) {
+    str += `${j} `;
+  }
+  console.log(str);
+  str = '';
+}
+/* 
+// * * * * *
+// * * * *
+// * * *
+// * * 
+// *
+let str = '';
+for (let i = 1; i <= 5; i++) {
+  for (let j = 5; j >= i; j--) {
+    str += '* ';
+  }
+  console.log(str);
+  str = '';
+}
+ */
+
+/*
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+
+const readlineSync = require('readline-sync');
+const n = readlineSync.question('Enter value of n\n');
+
 function printPattern(n) {
   let str = '';
   for (let i = 1; i <= n; i++) {
