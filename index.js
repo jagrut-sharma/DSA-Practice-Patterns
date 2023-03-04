@@ -1,3 +1,43 @@
+// INVERSE OF PREVIOUS PATTERN:
+
+let str = '';
+for(let i = 4; i >= 0; i--){
+  for(let j = 4; j > i; j--){
+    str += '  ';
+  }
+  for(let k= ((2*i) + 1); k > 0; k--){
+    str += '* '
+  }
+  console.log(str);
+  str = '';
+}
+
+/* 
+//       *
+//     * * *
+//   * * * * *
+// * * * * * * *
+
+let str = '';
+for (let i = 0; i < 5; i++) {
+  for (let j = 5; j > i; j--) {
+    str += '  ';
+  }
+  for(let k = 0; k< ((2*i)+1); k++){
+    str += '* ';
+  }
+  console.log(str);
+  str = '';
+}
+*/
+
+/* 
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+
 const readlineSync = require('readline-sync');
 const n = readlineSync.question('Enter value of n\n');
 
@@ -9,6 +49,7 @@ for (let i = 5; i >= 1; i--) {
   console.log(str);
   str = '';
 }
+ */
 /* 
 // * * * * *
 // * * * *
