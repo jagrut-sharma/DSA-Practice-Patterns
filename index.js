@@ -1,3 +1,67 @@
+// * 
+// * * 
+// * * * 
+// * * * * 
+// * * * * * 
+// * * * * 
+// * * * 
+// * * 
+// * 
+
+let str = '';
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= i; j++) {
+    str += '* ';
+  }
+  console.log(str);
+  str = '';
+}
+
+for (let k = 4; k >= 1; k--) {
+  for (let l = 1; l <= k; l++) {
+    str += '* '
+  }
+  console.log(str);
+  str = '';
+}
+
+/*
+
+//         *
+//       * * *
+//     * * * * *
+//   * * * * * * *      
+// * * * * * * * * *
+// * * * * * * * * *
+//   * * * * * * *
+//     * * * * *
+//       * * *
+//         *
+
+          
+let str = '';
+for (let i = 0; i <= 4; i++) {
+  for (let j = 4; j > i; j--) {
+    str += '  ';
+  }
+  for (let k = 0; k < ((2 * i) + 1); k++) {
+    str += '* '
+  }
+  console.log(str);
+  str = '';
+}
+for(let l = 4; l>=0; l--){
+  for(let m = 4; m>l; m--){
+    str += '  ';
+  }
+  for(let n = 0; n< ((2 * l) + 1); n++){
+    str += '* ';
+  }
+  console.log(str);
+  str = '';
+}
+
+/*
 // INVERSE OF PREVIOUS PATTERN:
 
 let str = '';
