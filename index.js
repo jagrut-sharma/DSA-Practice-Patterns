@@ -1,3 +1,25 @@
+// 1 * * * * * * 1 
+// 1 2 * * * * 2 1 
+// 1 2 3 * * 3 2 1 
+// 1 2 3 4 4 3 2 1
+
+let str = '';
+let spaces = 4;
+for (let i = 1; i <= 4; i++) {
+  for (let j = 1; j <= i; j++) {
+    str += `${j} `;
+  }
+  for (let k = 1; k <= 2 * (spaces - i); k++) {
+    str += `  `;
+  }
+  for (let l = i; l >= 1; l--) {
+    str += `${l} `;
+  }
+  console.log(str);
+  str = '';
+}
+
+/*
 // 1 
 // 0 1 
 // 1 0 1 
