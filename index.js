@@ -1,3 +1,25 @@
+// 1 
+// 2 3 
+// 4 5 6 
+// 7 8 9 10 
+// 11 12 13 14 15 
+// 16 17 18 19 20 21 
+
+const readlineSync = require('readline-sync');
+const n = readlineSync.question('Enter value of n: ');
+
+let count = 1, str = '';
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= i; j++) {
+    str += `${count} `;
+    count++;
+  }
+  console.log(str);
+  str = '';
+}
+
+
+/*
 // 1 * * * * * * 1 
 // 1 2 * * * * 2 1 
 // 1 2 3 * * 3 2 1 
